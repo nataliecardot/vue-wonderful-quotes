@@ -3,7 +3,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      quotes: ["Inspiring quote"],
+      maxQuotes: 10,
+    };
+  },
+};
 </script>
 
 <style></style>
