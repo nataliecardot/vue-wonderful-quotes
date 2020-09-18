@@ -4,7 +4,7 @@
     <!-- Cards replaced panels in Bootstrap 4 -->
     <div class="panel panel-default">
       <div class="panel-body quote">
-        <!-- Using a slot because quote content will come from outside; the thing passing in the content/its holder (in this case quote grid component) should be deciding how it looks -->
+        <!-- Using a slot because quote content will come from outside; the thing passing in the content/its holder (in this case QuoteGrid component) should be deciding how it looks -->
         <slot></slot>
       </div>
     </div>
