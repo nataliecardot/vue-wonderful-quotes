@@ -27,6 +27,9 @@ export default {
   methods: {
     // Vue.js automatically provides data passed on custom event, so can simply access the quote passed by NewQuote.vue in the emit event in the argument
     newQuote(quote) {
+      if (this.quotes.length >= this.maxQuotes) {
+        return alert("Please delete a quote first.");
+      }
       this.quotes.push(quote);
     },
     deleteQuote(index) {
