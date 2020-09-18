@@ -3,6 +3,11 @@
     <!-- newQuote($event) is implicitly passed, where $event refers to data passed in custom event -->
     <app-new-quote @quoteAdded="newQuote"></app-new-quote>
     <app-quote-grid :quotes="quotes"></app-quote-grid>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="alert alert-info">Click on a quote to delete it.</div>
+      </div>
+    </div>
   </div>
 </template>
 
