@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <app-header :quoteCount="quotes.length" :maxQuotes="maxQuotes"></app-header>
     <!-- newQuote($event) is implicitly passed, where $event refers to data passed in custom event -->
     <app-new-quote @quoteAdded="newQuote"></app-new-quote>
     <app-quote-grid :quotes="quotes" @quoteDeleted="deleteQuote"></app-quote-grid>
@@ -14,6 +15,7 @@
 <script>
 import QuoteGrid from "./components/QuoteGrid.vue";
 import NewQuote from "./components/NewQuote.vue";
+import Header from "./components/Header.vue";
 
 export default {
   data() {
@@ -35,6 +37,7 @@ export default {
   components: {
     appQuoteGrid: QuoteGrid,
     appNewQuote: NewQuote,
+    appHeader: Header,
   },
 };
 </script>
