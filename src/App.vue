@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- newQuote($event) is implicitly passed, where $event refers to data passed in custom event -->
     <app-new-quote @quoteAdded="newQuote"></app-new-quote>
     <app-quote-grid :quotes="quotes"></app-quote-grid>
   </div>
